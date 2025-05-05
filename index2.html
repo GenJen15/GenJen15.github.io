@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists, Forms and Tables</title>
+    <style>
+        body{
+            background-color: rgb(125, 173, 204);
+        }
+        table, td, th{
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+        table{
+            width: 75%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="unordered">
+            <h3>My Favorite Foods</h3>
+            <ol type="A"> Lists: 
+                <li> Games :
+                    <ul>
+                        <li>Tekken</li>
+                        <li>Osu</li>
+                        <li>Project Sekai</li>
+                        <li>Terraria</li>
+                        <li>Cyberpunk</li>
+                    </ul>
+                </li> 
+                <li> Levels
+                    <ul>
+                        <li>Easy</li>
+                        <li>Normal</li>
+                        <li>Expert</li>
+                    </ul>
+                </li>
+            </ol>  
+        </div>
+    </div>
+    <div class="description">
+        <dl>
+            <dt>Practicing HTML Programming</dt>
+            <dd>Practicing for exactly what?</dd>
+        </dl>
+    </div>
+    <!-- div.table>table>thead>tr>th*4^^tbody>td*4 -->
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"> schedule for 3rd Term 2024-2025</th>
+                </tr>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>7:00 AM - 8:50 AM</td>
+                    <td>PE</td>
+                    <td>1101</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Web Design</td>
+                    <td>1107</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>1:00 PM - 2:50 PM</td>
+                    <td>Art Appreciation</td>
+                    <td>707</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>3:00 PM - 4:50 PM</td>
+                    <td>Contemporary World</td>
+                    <td>Online</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- div.login>form:post>div.form-group*2>label+input -->
+    <div class="login">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" placeholder="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="Password" name="password" placeholder="password">
+            </div>
+            <!-- div>button.submit{Log In} -->
+            </div>
+                <button type="submit">Log In</button>      
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
