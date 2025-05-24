@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Summative Assessment</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        table, td, th{
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+        .text-left{
+            text-align: left;
+        }
+        table, form{
+            width: 75%;
+            margin: auto;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+        }
+        tr{
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60px;
+            height: 150px;
+        }
+        input{
+            width: 65%;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        #message{
+            width: 65%;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+     <div class="table">
+        <table cellpadding="2" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan = "6" style="background-color: lightblue;">INVENTORY SYSTEMS</th>
+                </tr>
+                <tr style="background-color: #cecece;">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Supplier</th>
+                    <th>Date</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <tr>
+                        <td>10001</td>
+                        <td class="text-left">Boy Bawang Adobo (pc)</td>
+                        <td>1000</td>
+                        <td rowspan="8" rowspan="2" style="background-color: khaki; font-family: Arial, Helvetica, sans-serif">KSK</td>
+                        <td rowspan="2">5/14/2019</td>
+                        <td rowspan="8"><img src="BoyBawang.png" alt="Boy Bawang" > </td>
+                    </tr>
+                    <tr>
+                        <td>10002</td>
+                        <td class="text-left">Boy Bawang Adobo (pack)</td>
+                        <td>200</td>
+                        
+                    </tr>
+                    <tr style="background-color: #cecece;">
+                        <td>10003</td>
+                        <td class="text-left">Boy Bawang Garlic (pc)</td>
+                        <td>3000</td>
+                        <td rowspan="2">5/15/2019</td>
+                        
+                    </tr>
+                    <tr style="background-color: #cecece;">
+                        <td>10004</td>
+                        <td class="text-left">Boy Bawang Garlic (pack)</td>
+                        <td style="color: red;">150</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>10005</td>
+                        <td class="text-left">Boy Bawang Spicy (pc)</td>
+                        <td>4000</td>
+                        <td rowspan="2">5/16/2019</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>10006</td>
+                        <td class="text-left">Boy Bawang Spicy (pack)</td>
+                        <td>240</td>
+                        
+                    </tr>
+                    <tr style="background-color: #cecece;">
+                        <td>10007</td>
+                        <td class="text-left">Boy Bawang BBQ (pc)</td>
+                        <td>3000</td>
+                        <td rowspan="2">5/17/2019</td>
+                        
+                    </tr>
+                    <tr style="background-color: #cecece;">
+                        <td>10008</td>
+                        <td class="text-left">Boy Bawang BBQ (pack)</td>
+                        <td>210</td>
+
+                    </tr>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+     <div>
+        <form class="form">   
+            <ul>
+                <li>
+                    <label for="yname">Your name*</label>
+                    <ul>
+                        <li>
+                            <input type="text" id="yname" name="yname"><br>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="email">Email*</label>
+                    <ul>
+                        <li>
+                            <input type="email" id="email" name="email">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="text">Contact No*</label>
+                    <ul>
+                        <li>
+                            <input type="tel" name="tel" id="tel" style="width: 30%;">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="message">Message*</label>
+                    <ul>
+                        <li>
+                            <input type="text" name="tel" id="tel" style="width: 80%; height: 100px;">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="message">Required field*</label>
+                    <ul>
+                        <li>
+                           
+                            <input type="submit" value="Send" style="width: 70px; height: 30px; background-color:#4267B2; color: aliceblue; border-color: rgb(90, 90, 90);"><br>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+ 
+        </form>
+     </div>
+</body>
+</html>
