@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="external_registration.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form ">
+            <div class="row">
+                <div class="header">
+                    FEU TECH ONLINE REGISTRATION AND ENROLLMENT
+                </div>
+            </div>
+            <div>
+                <label for="name" class="mt-3">Name</label>
+                <input type="text" id="name" name="name" placeholder="(Last name, First Name Middle Name) (e.g., Dela Cruz, Juan Vega)">
+            </div>
+            <div>
+                <label for="password" class="mt-3">password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div> 
+            <div>
+                <label for="address" class="mt-3">Address</label>
+                <input type="text" id="address" name="address" placeholder="Taguig city etc...">
+            </div>
+            <div>
+                <label for="contact" class="mt-3">Contact no</label>
+                <input type="tel" id="contact" name="contact" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div>
+                <label for="bday" class="mt-3">Birthdate</label>
+                <input type="date" id="bday" name="bday">
+            </div>
+            <div class="mb-2">
+                <label class="form-label mt-3">Gender</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                    <label class="form-check-label mr-2" for="male">Male</label>
+                    <input class="form-check-input " type="radio"  id="male" name="gender" value="male"> 
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label mr-2" for="female">Female</label>
+                    <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label mr-2" type="radio "for="other">Prefer not to say</label>
+                    <input class="form-check-input" type="radio" id="other" name="gender" value="other">
+                </div>
+                </div>
+            </div>
+            <div>
+                <label for="degree" class="mt-3">Preferred Degree</label>
+                    <select>
+                    <option value="BSIT">Bachelor of Science in Information Technology</option>
+                    <option value="BSCS">Bachelor of Science in Computer Science</option>
+                    <option value="BSA">Bachelor of Science in Accountancy</option>
+                    <option value="BSE">Bachelor of Secondary Education</option>
+                    <option value="BSED">Bachelor of Elementary Education</option>
+            </select>
+            </div>
+            <div class="d-flex justify-content-center">
+                <input type="submit" value="Register" class="btn btn-primary mt-4" id="myBtn1" style="background-color: #ffffff; border-color: #00753f; color: #00753f; width: 150px;">
+            </div>
+        </div>    
+        </form>
+    </div>
+</body>
+</html

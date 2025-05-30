@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body { 
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+    background-image: url(FEU.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.container{
+    background-color:#ffffff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+form{
+    height: 120px;
+    border-radius: 5px 5px 0 0;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+  
+}
+.header{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: #ffc20e;
+    border-radius: 5px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+#name, #address, #contact, #bday, #password, select {
+    width: 100%;
+}
+select{
+    height: 35px;
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+}
+#myBtn1:hover{
+    background-color: #00753f;
+    color: #ffffff;
+}
