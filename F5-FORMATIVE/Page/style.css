@@ -1,0 +1,27 @@
+body{
+    background-color: #393E46;
+    padding: 0;
+        }
+.container-fluid{
+    background-image: linear-gradient(#222831, #948979);
+    max-width: 150vh; 
+    border-radius: 10px; 
+    font-size: large;
+}
+img{
+    border-radius: 10px;
+    color: white; 
+}
+.col-md-6{
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+.card{
+    background-color: #DFD0B8;
+}
+#myBtn{
+    background-color: #DFD0B8;
+    color: #222831; 
+    border-color: #222831; 
+}
