@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,13 +23,17 @@ h1, h3 {
     text-decoration: none;
 }
 
-
-
 #home-page {
     height: 150vh;
 }
 
-
-#nav-items li, a {
+#main-nav{
     transition: all 0.3s ease 0s;
 }
+
+button{
+    padding: 9px 25px;
+    color: aliceblue;
+    transition: all 0.3s ease 0s;
+}
+
