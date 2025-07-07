@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
-
-
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0%;
 }
+
+
 
 li, a, button, #dropdown-more {
     font-family: "Montserrat", sans-serif;
@@ -25,6 +24,7 @@ h1, h3 {
 
 #home-page {
     height: 150vh;
+    max-width: 130vh;
 }
 
 #main-nav{
@@ -36,4 +36,7 @@ button{
     color: aliceblue;
     transition: all 0.3s ease 0s;
 }
+
+
+
 

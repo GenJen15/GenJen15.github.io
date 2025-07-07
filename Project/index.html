@@ -6,32 +6,28 @@
     <link rel="icon" type="image/icon" href="Assets/Favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Assets/_styles/homeStyle.css">
     <title>Home: Pokémon GO Web Store</title>
 </head>
 <body>
-    <nav class="navbar sticky-top p-1" style="background-color: #07224E; " id="main-nav">
-        <a href="index.html"><img src="Assets/Pokemon-Go-Logo-2.png" alt="An image of Pokemon Go logo" style="height: 50px;"></a>
-        <ul class="row navbar-nav flex-row" id="nav-items">
-            <li class="col nav-item">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown-more" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                GO FEST
-                </a>
-            </li>
-            <li class="col nav-item p-2"><a href="">NEWS</a></li>
-            <li class="col nav-item p-2"><a href="">SEASONS</a></li>
-            <li class="col nav-item p-2"><a href="">EVENTS</a></li>
-            <li class="col nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown-more" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                MORE
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                </div>
-            </li>
-            <li class="col nav-item p-2"><a href="">SHOP</a></li>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top p-1" style="background-color: #07224E; " id="main-nav">
+        <div id="logo">
+            <a href="index.html" class="navbar-brand"><img src="Assets/Pokemon-Go-Logo-2.png" alt="An image of Pokemon Go logo" style="height: 50px; justify-self: center;"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarid" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarid">
+            <ul class="navbar-nav text-center ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><button type="button" class="btn btn-outline-warning text-center"><a href="registration-page.html">SIGN UP</a></button></li>
         </ul>
-            <a href="registration-page.html"><button type="button" class="btn btn-outline-warning"><i class="fa-regular fa-user"></i>  SIGN UP</button></a>
+        </div>
+        
     </nav>
     <div class="container-fluid" id="home-page">
         <hr>
@@ -40,10 +36,38 @@
             <h3 class="mb-3">Now open for every pokémon trainers</h3>
         </div>
         <hr>
-        <img src="Assets/pokemon.jpg" alt="pokemon wallpaper" style="width: 100%;">
+        <section>
+            <div id="splasharts" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#splasharts" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#splasharts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#splasharts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Assets/_splash arts/pokemon-GO-wallpaper-4k-1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Assets/_splash arts/pokemon-GO-wallpaper-4k-2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Assets/_splash arts/pokemon-GO-wallpaper-4k.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#splasharts" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#splasharts" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
     </div>
     <footer class="text-center">
         <p><em>Wanthony's Disciples</em></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
