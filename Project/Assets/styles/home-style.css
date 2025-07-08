@@ -4,7 +4,7 @@
 }
 
 li, a, button, #dropdown-more {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: white;
@@ -12,9 +12,9 @@ li, a, button, #dropdown-more {
 }
 
 h1, h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: #07224E;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -31,6 +31,11 @@ button{
     padding: 9px 25px;
     color: aliceblue;
     transition: all 0.3s ease 0s;
+}
+
+#header {
+    background: linear-gradient(#3561AD, #0B4DA2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 
