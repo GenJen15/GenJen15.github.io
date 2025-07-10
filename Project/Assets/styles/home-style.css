@@ -3,6 +3,15 @@
     padding: 0%;
 }
 
+@keyframes slideDown {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#main-nav {
+    animation: slideDown 0.6s ease-out;
+}
+
 li, a, button, #dropdown-more {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -19,7 +28,7 @@ h1, h3 {
 }
 
 #home-page {
-    height: 150vh;
+
     max-width: 130vh;
 }
 
@@ -37,6 +46,15 @@ button{
     background: linear-gradient(#3561AD, #0B4DA2);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
+.video-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
 
 
 

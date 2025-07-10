@@ -1,0 +1,26 @@
+body{
+    background-color: #3561AD;
+}
+
+li, a, button, label, button, #dropdown-more {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFCB08 ;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 22px;
+}
+
+#register:hover {
+    color:#0B4DA2;
+}
+
+
