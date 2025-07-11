@@ -1,6 +1,7 @@
-*{
+body{
     margin: 0;
     padding: 0%;
+    background-color: #3561AD;
 }
 
 @keyframes slideDown {
@@ -43,8 +44,13 @@ button{
 }
 
 #header {
-    background: linear-gradient(#3561AD, #0B4DA2);
+    background-color: #FFCB08;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s ease-out;
+}
+
+#header:hover {
+    transform: scale(1.02, 1.02);
 }
 
 .video-section{

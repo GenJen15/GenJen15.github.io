@@ -10,7 +10,7 @@ li, a, button, label, button, #dropdown-more {
     text-decoration: none;
 }
 
-.registration-form {
+.login-form {
     max-width: 60vh;
     margin: 50px auto;
     padding: 20px;

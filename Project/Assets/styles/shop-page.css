@@ -6,12 +6,12 @@ li, a, button, label, button, #dropdown-more {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.registration-form {
-    max-width: 60vh;
+.shop-wrapper {
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background-color: #FFCB08 ;
@@ -19,8 +19,6 @@ li, a, button, label, button, #dropdown-more {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 22px;
 }
 
-#register:hover {
-    background-color:#0B4DA2;
+#purchase:hover {
+    color:#000000;
 }
-
-

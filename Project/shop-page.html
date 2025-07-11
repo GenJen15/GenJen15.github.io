@@ -3,11 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Assets/Favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/styles/shop-page.css">
     <title>Shop</title>
 </head>
 <body>
-    <div class="container-fluid">
-        contents are in still development...
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top p-1" style="background-color: #07224E; " id="main-nav">
+        <div id="logo">
+            <a href="index.html" class="navbar-brand"><img src="Assets/Pokemon-Go-Logo-2.png" alt="An image of Pokemon Go logo" style="height: 50px; justify-self: center;"></a>
+        </div>
+
+        <div class="d-none d-xxl-block">
+          <div class="collapse navbar-collapse">
+          <ul class="navbar-nav text-center ms-auto">
+            <div class="btn-group">
+              <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <b>GO FEST</b>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li><button class="dropdown-item" type="button">Another action</button></li>
+                <li><button class="dropdown-item" type="button">Something else here</button></li>
+              </ul>
+            </div>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">News</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Seasons</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Events</a></li> 
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Community</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Leaderboards</a></li>
+          </ul>
+        </div>
     </div>
+        
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarid" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarid">
+            <ul class="navbar-nav text-center ms-auto">
+                <li class="nav-item m-2"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item m-2"><a class="nav-link" href="about-page.html">About</a></li>
+                <li class="nav-item m-2"><a href="registration-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user-plus"></i> Register</a></li>
+                <li class="nav-item m-2"><a href="login-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user"></i></i> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <section class="shop-wrapper">
+            <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Shopping Cart:</label>
+                <p>Poke: Php 100 <br> Mon: Php 200 <br> Go: Php 300</p>
+            </div>
+            <div class="mb-3">
+            </div>
+            <button type="button" class="btn btn-primary" id="purchase">Purchase</button>
+        </form>
+        </section>
+    </div>
+    <script>
+        function Computation(){
+            let Poke = 100, Mon = 200, Go = 300;
+            let price = Poke + Mon + Go;
+            alert("Total Price: " + price)
+
+        }
+        document.getElementById("register").addEventListener("click", Computation);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
