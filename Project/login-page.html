@@ -14,9 +14,48 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top p-1" style="background-color: #07224E; " id="main-nav">
-        <div id="logo">
-            <a href="index.html" class="navbar-brand"><img src="Assets/Pokemon-Go-Logo-2.png" alt="An image of Pokemon Go logo" style="height: 50px; justify-self: center;"></a>
+
+        <div class="d-none d-xl-block">
+          <div class="collapse navbar-collapse">
+          <ul class="navbar-nav text-center ms-auto">
+            <li class="nav-item  ">
+                <div id="logo">
+                    <a class="nav-link" href="index.html" class="navbar-brand"><img src="Assets/Pokemon-Go-Logo-2.png" alt="An image of Pokemon Go logo" style="height: 40px; justify-self: center;"></a>
+                </div>
+            </li>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b>GO FEST</b>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">News</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Seasons</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Events</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Community</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Leaderboards</a></li>
+            </ul>
+            </div>
         </div>
+
+        <div class="d-xl-none">
+            <div class="dropdown">
+                <img src="Assets/Pokemon-Go-Logo-2.png" alt="GO FEST" data-bs-toggle="dropdown" aria-expanded="false" style="height: 50px; cursor: pointer;">
+         
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">News</button></li>
+                    <li><button class="dropdown-item" type="button">Seasons</button></li>
+                    <li><button class="dropdown-item" type="button">Events</button></li>
+                    <li><button class="dropdown-item" type="button">Community</button></li>
+                    <li><button class="dropdown-item" type="button">Leaderboards</button></li>
+                </ul>
+            </div>
+        </div>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarid" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,8 +63,8 @@
         
         <div class="collapse navbar-collapse" id="navbarid">
             <ul class="navbar-nav text-center ms-auto">
-                <li class="nav-item m-2"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item m-2"><a class="nav-link" href="about-page.html">About</a></li>
+                <li class="nav-item m-2"><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="nav-item m-2"><a class="nav-link" href="about-page.html"><i class="fa-solid fa-address-card"></i> About</a></li>
                 <li class="nav-item m-2"><a class="nav-link" href="shop-page.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
                 <li class="nav-item m-2"><a href="registration-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user-plus"></i> Register</a></li>
         </ul>
@@ -33,21 +72,22 @@
     </nav>
     <div class="container-fluid">
         <section class="form-wrapper">
-            <form class="login-form">
-            <div class="mb-3">
-                <i class="fa-solid fa-envelope"></i>
-                <label for="username" class="form-label">Username<span style="color: red;">*</span></label>
-                <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="emailHelp" required>
-            </div>
-            <div class="mb-3">
-                <i class="fa-solid fa-lock"></i>
-                <label for="password" class="form-label">Password<span style="color: red;">*</span></label>
-                <input type="password" class="form-control" id="username" placeholder="Username" aria-describedby="emailHelp" required>
-            </div>
-            <div class="d-flex justify-content-center mt-3">
-                <button type="button" class="btn btn-primary" id="login">Login</button>
-            </div>
-        </form>
+            <form id="login-form">
+                <div class="mb-3">
+                    <i class="fa-solid fa-envelope"></i>
+                    <label for="username" class="form-label">Username<span style="color: red;">*</span></label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <i class="fa-solid fa-lock"></i>
+                    <label for="password" class="form-label">Password<span style="color: red;">*</span></label>
+                    <input type="password" class="form-control" id="password" placeholder="password" aria-describedby="emailHelp" required>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
         </section>
 
     </div>
@@ -56,6 +96,30 @@
         <p style="color: aliceblue;">Wanthony's Disciples</p>
     </footer>
     
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+    
+            var user = localStorage.getItem(username);
+    
+            if (user) {
+                var parsedUser = JSON.parse(user);
+                if (parsedUser.password === password) {
+                    localStorage.setItem('user', JSON.stringify(parsedUser));
+                    alert(`Login successful. Welcome ${parsedUser.username}`);
+                    window.location.href = 'index.html';
+                }
+            else {
+                alert('Incorrect password. Please try again.');
+            }     
+        }
+        else {
+            alert(`${username} user not found.`);
+        }
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
