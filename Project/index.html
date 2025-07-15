@@ -63,7 +63,7 @@
         <div class="collapse navbar-collapse" id="navbarid">
             <ul class="navbar-nav text-center ms-auto">
                 <li class="nav-item m-2"><a class="nav-link" href="about-page.html"><i class="fa-solid fa-address-card"></i> About</a></li>
-                <li class="nav-item m-2"><a class="nav-link" href="shop-page.html"><i class="fa-solid fa-cart-shopping"></i>  Cart</a></li>
+                <li class="nav-item m-2"><a class="nav-link" href="shop-page.html"><i class="fa-solid fa-cart-shopping"></i>  Shop</a></li>
                 <li class="nav-item m-2" id="register-btn"><a href="registration-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user-plus"></i> Register</a></li>
                 <li class="nav-item m-2" id="login-btn"><a href="login-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user"></i></i> Login</a></li>
                 <li class="nav-item m-2" id="logout-btn" style="display: none;"><a href="login-page.html" class="btn btn-outline-warning text-center"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
@@ -72,9 +72,12 @@
     </nav>
     <div class="container-fluid" id="home-page">
         <hr>
-        <div style="display: flex; flex-direction: column; text-align: center;" id="header">
+        <div class="text-center p-3" id="header">
             <h1 class="mt-3">WELCOME TO POKEMON GO WEBSTORE</h1>
             <h3 class="mb-3">NOW OPEN TO ALL POKEMON TRAINERS!</h3>
+            <div>
+                <a class="btn btn-primary" href="shop-page.html" role="button" style="border-radius: 40px; background-color: #f55d42; border-color: #f55d42;"><i class="fa-solid fa-arrow-right"></i>  Check it out now!</a>
+            </div>
         </div>
         <hr>
         <section>
@@ -109,10 +112,41 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/jAf4nLidU1Q?si=RE84wAaNgoBcBjW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </div>
-    
-    <hr style="color: white;">
-    <footer class="text-center">
-        <p style="color: aliceblue;">Wanthony's Disciples</p>
+    <footer class="text-light p-2 mt-3 d-block justify-content-center align-items-center">
+        <hr>
+        <div class="row">
+            <div class="col-6 col-lg-3 text-center">
+                <img src="Assets/pokeball-logo.png" alt="" style="max-height: 50px;">
+            </div>
+            <div class="col text-center">
+                <h4>Catergories</h4>
+                <ul class="list-unstyled"> 
+                    <li><a href=""></a>Go fest</li>
+                    <li><a href=""></a>News</li>
+                    <li><a href=""></a>Seasons</li>
+                    <li><a href=""></a>Events</li>
+                    <li><a href=""></a>Community</li>
+                    <li><a href=""></a>Leaderboards</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 text-center">
+                <h4 >Socials</h4>
+                <div>
+                    <a href=""><i class="fa-brands fa-square-facebook fs-2 me-3"></i></a>
+                    <a href=""><i class="fa-brands fa-square-youtube fs-2 me-3"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fs-2 me-3"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter fs-2 mb-3"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <p>2025 @ Wanthony's Disciples</p>
+                <div>
+                    <a href="" class="me-2">Terms of use</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
     <script>
         window.addEventListener('DOMContentLoaded', function() {

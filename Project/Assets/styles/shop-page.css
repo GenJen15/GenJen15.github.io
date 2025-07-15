@@ -2,7 +2,7 @@ body{
     background-color: #3561AD;
 }
 
-li, a, button, label, button, #dropdown-more {
+li, a, button, label, #dropdown-more {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -11,7 +11,8 @@ li, a, button, label, button, #dropdown-more {
 }
 
 .shop-wrapper {
-    max-width: 500px;
+    max-width: 100%;
+    max-height: 150vh;
     margin: 50px auto;
     padding: 20px;
     background-color: #FFCB08 ;
@@ -19,6 +20,30 @@ li, a, button, label, button, #dropdown-more {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 22px;
 }
 
-#purchase:hover {
-    color:#000000;
+#cart-tab {
+    max-width: 100%;
+    max-height: 150vh;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#addToCart {
+    transition: transform 0.3s ease;
+}
+
+#addToCart:hover {
+    transform: scale(1.05);
+}
+
+#cart {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#cart.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
