@@ -15,61 +15,25 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top p-1" style="background-color: #07224E; " id="main-nav">
 
-        <div class="d-none d-xl-block">
-          <div class="collapse navbar-collapse">
-          <ul class="navbar-nav text-center ms-auto">
-            <li class="nav-item ">
-                    <a class="nav-link" href="index.html" class="navbar-brand"><img src="Assets/Pokemon-Go-Logo-2.png" alt="An image of Pokemon Go logo" style="max-height: 40px; justify-self: center;"></a>
-            </li>
-            
-                <div class="btn-group">
-                    <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <b>GO FEST</b>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><button class="dropdown-item" type="button">Action</button></li>
-                        <li><button class="dropdown-item" type="button">Another action</button></li>
-                        <li><button class="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
-                </div>
-            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">News</a></li>
-            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Seasons</a></li>
-            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Events</a></li>
-            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Community</a></li>
-            <li class="nav-item m-2"><a class="nav-link" href="login-page.html">Leaderboards</a></li>
-            </ul>
-            </div>
+        <div id="logo">
+             <a class="nav-link" href="index.html" class="navbar-brand"><img src="Assets/Pokemon-Go-Logo-2.png" alt="An image of Pokemon Go logo" style="height: 50px; justify-self: center;"></a>
         </div>
 
-        <div class="d-xl-none">
-            <div class="dropdown m-2">
-                <img src="Assets/Pokemon-Go-Logo-2.png" alt="GO FEST" data-bs-toggle="dropdown" aria-expanded="false" style="max-height: 40px; cursor: pointer;">
-         
-                <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">News</button></li>
-                    <li><button class="dropdown-item" type="button">Seasons</button></li>
-                    <li><button class="dropdown-item" type="button">Events</button></li>
-                    <li><button class="dropdown-item" type="button">Community</button></li>
-                    <li><button class="dropdown-item" type="button">Leaderboards</button></li>
-                </ul>
-            </div>
-        </div>
-        
-        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarid" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
         </button>
-
+        
+        
         <div class="collapse navbar-collapse" id="navbarid">
             <ul class="navbar-nav text-center ms-auto">
                 <li class="nav-item m-2"><a class="nav-link" href="about-page.html"><i class="fa-solid fa-address-card"></i> About</a></li>
-                <li class="nav-item m-2"><a class="nav-link" href="shop-page.html"><i class="fa-solid fa-cart-shopping"></i>  Shop</a></li>
-                <li class="nav-item m-2" id="register-btn"><a href="registration-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user-plus"></i> Register</a></li>
-                <li class="nav-item m-2" id="login-btn"><a href="login-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user"></i></i> Login</a></li>
-                <li class="nav-item m-2" id="logout-btn" style="display: none;"><a href="login-page.html" class="btn btn-outline-warning text-center"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
-            </ul>
+                <li class="nav-item m-2"><a class="nav-link" href="shop-page.html"><i class="fa-solid fa-cart-shopping"></i> Shop</a></li>
+                <li class="nav-item m-2"><a href="registration-page.html" class="btn btn-outline-warning text-center"><i class="fa-solid fa-user-plus"></i> Register</a></li>
+                <li class="nav-item m-2"><a href="login-page.html" class="btn btn-outline-warning text-center"><i class="fa-regular fa-user"></i> Login</a></li>
+        </ul>
         </div>
     </nav>
+
     <div class="container-fluid" id="home-page">
         <hr>
         <div class="text-center p-3" id="header">
@@ -119,30 +83,30 @@
                 <img src="Assets/pokeball-logo.png" alt="" style="max-height: 50px;">
             </div>
             <div class="col text-center">
-                <h4>Catergories</h4>
+                <h4>Links</h4>
                 <ul class="list-unstyled"> 
-                    <li><a href=""></a>Go fest</li>
-                    <li><a href=""></a>News</li>
-                    <li><a href=""></a>Seasons</li>
-                    <li><a href=""></a>Events</li>
-                    <li><a href=""></a>Community</li>
-                    <li><a href=""></a>Leaderboards</li>
+                    <li><a href="about-page.html">About</a></li>
+                    <li><a href="shop-page.html">Shop</a></li>
+                    <li><a href="registration-page.html">Register</a></li>
+                    <li><a href="login-page.html">Login</a></li>
                 </ul>
             </div>
             <div class="col-12 col-lg-3 text-center">
                 <h4 >Socials</h4>
                 <div>
-                    <a href=""><i class="fa-brands fa-square-facebook fs-2 me-3"></i></a>
-                    <a href=""><i class="fa-brands fa-square-youtube fs-2 me-3"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram fs-2 me-3"></i></a>
-                    <a href=""><i class="fa-brands fa-square-x-twitter fs-2 mb-3"></i></a>
+                    <a href="https://www.facebook.com/PokemonGO/" target="_blank"><i class="fa-brands fa-square-facebook fs-2 me-3"></i></a>
+                    <a href="https://www.youtube.com/pokemongo" target="_blank"><i class="fa-brands fa-square-youtube fs-2 me-3"></i></a>
+                    <a href="https://www.instagram.com/pokemongoapp/" target="_blank"><i class="fa-brands fa-instagram fs-2 me-3"></i></a>
+                    <a href="https://x.com/PokemonGoApp" target="_blank"><i class="fa-brands fa-square-x-twitter fs-2 mb-3"></i></a>
                 </div>
             </div>
             <hr>
             <div class="d-flex justify-content-between">
                 <p>2025 @ Wanthony's Disciples</p>
-                <div>
-                    <a href="" class="me-2">Terms of use</a>
+                <div class="text-center me-2">
+                    <a href="" >Terms of use</a>
+                </div>
+                <div class="text-center me-2">
                     <a href="">Privacy Policy</a>
                 </div>
             </div>
