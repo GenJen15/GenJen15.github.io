@@ -2,12 +2,27 @@ body{
     background-color: #3561AD;
 }
 
+@keyframes slideDown {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#main-nav {
+    animation: slideDown 0.6s ease-out;
+}
+
+
 li, a, button, label, button, #dropdown-more {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: white;
     text-decoration: none;
+}
+
+.form-wrapper {
+    height: 40vh;
+    margin-top: 130px;
 }
 
 #login-form {
@@ -23,4 +38,7 @@ li, a, button, label, button, #dropdown-more {
     background-color:#0B4DA2;
 }
 
+footer {
+    background-color: #07224E;
+}
 

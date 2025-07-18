@@ -37,6 +37,9 @@
     <div class="container-fluid">
         <section class="form-wrapper">
             <form id="registration-form">
+              <div  class="d-flex justify-content-center">
+                <h1><strong>Register</strong></h1>
+              </div>
             <div class="mb-3">
                 <i class="fa-solid fa-envelope"></i>
                 <label for="email" class="form-label">Email Address<span style="color: red;">*</span></label>
@@ -66,8 +69,40 @@
         </section>
     </div>
     <hr style="color: white;">
-    <footer class="text-center">
-        <p style="color: aliceblue;">Wanthony's Disciples</p>
+    <footer class="text-light p-2 mt-3 d-block justify-content-center align-items-center">
+      <hr>
+        <div class="row">
+          <div class="col-6 col-lg-3 text-center">
+            <img src="Assets/pokeball-logo.png" alt="" style="max-height: 50px;">
+          </div>
+          <div class="col text-center">
+            <h4>Links</h4>
+            <ul class="list-unstyled"> 
+              <li><a href="about-page.html" style="color: white;">About</a></li>
+              <li><a href="shop-page.html" style="color: white;">Shop</a></li>
+              <li><a href="registration-page.html" style="color: white;">Register</a></li>
+              <li><a href="login-page.html" style="color: white;">Login</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 text-center">
+            <h4 >Socials</h4>
+              <div>
+                <a href="https://www.facebook.com/PokemonGO/" target="_blank"><i class="fa-brands fa-square-facebook fs-2 me-3" style="color: white;"></i></a>
+                <a href="https://www.youtube.com/pokemongo" target="_blank"><i class="fa-brands fa-square-youtube fs-2 me-3"  style="color: white;"></i></a>
+                <a href="https://www.instagram.com/pokemongoapp/" target="_blank"><i class="fa-brands fa-instagram fs-2 me-3"  style="color: white;"></i></a>
+                <a href="https://x.com/PokemonGoApp" target="_blank"><i class="fa-brands fa-square-x-twitter fs-2 mb-3"  style="color: white;"></i></a>
+              </div>
+          </div>
+          <hr>
+          <div class="row d-flex">
+            <div class="col d-flex justify-content-center align-items-center"><p>2025 @ Wanthony's Disciples</p></div>
+            <div class="col d-flex justify-content-center align-items-center"><a href=""  style="color: white;">Terms of use</a></div>
+            <div class="col d-flex justify-content-center align-items-center"><a href=""  style="color: white;">Privacy Policy</a></div>
+          </div>
+          <div class="text-center">
+            <p><br>This website is a student project created solely for educational purposes. <br>All content related to Pokémon used on this site is owned by its respective rights holder, Scopely. <br>We do not claim ownership of any Pokémon-related materials. <br>This site is not affiliated with, endorsed by, or sponsored by Scopely or any of its partners.</p>
+          </div>
+        </div>
     </footer>
     <script>
         document.getElementById('registration-form').addEventListener("submit", function(event){
