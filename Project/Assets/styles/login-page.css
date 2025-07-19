@@ -21,7 +21,7 @@ li, a, button, label, button, #dropdown-more {
 }
 
 .form-wrapper {
-    height: 40vh;
+    max-height: auto;
     margin-top: 130px;
 }
 
